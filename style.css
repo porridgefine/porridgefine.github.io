@@ -250,6 +250,21 @@ section h2 {
     box-shadow: 0 5px 15px rgba(102, 255, 204, 0.3);
 }
 
+.project-image {
+    width: 100%;
+    max-width: 480px;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--accent-pink);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .project-placeholder {
     text-align: center;
     padding: 40px;
