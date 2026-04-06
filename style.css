@@ -259,6 +259,72 @@ section h2 {
 }
 
 /* ========================================
+   Other Projects Section
+   ======================================== */
+.other-project-item {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 30px;
+    align-items: center;
+    background: rgba(61, 107, 107, 0.4);
+    border: 2px solid var(--card-border);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.other-project-item:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 179, 102, 0.2);
+}
+
+.other-project-content h3 {
+    font-size: 24px;
+    color: var(--accent-green);
+    margin-bottom: 15px;
+}
+
+.other-project-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.other-project-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid var(--accent-pink);
+}
+
+.other-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.other-project-item:hover .other-project-image img {
+    transform: scale(1.05);
+}
+
+.btn-itch {
+    background: linear-gradient(135deg, #fa5c5c, #ff8585);
+    color: white;
+    border-color: var(--accent-pink);
+}
+
+.btn-itch:hover {
+    background: linear-gradient(135deg, #ff8585, #fa5c5c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(250, 92, 92, 0.4);
+}
+
+/* ========================================
    Contact Section
    ======================================== */
 .contact-grid {
@@ -376,6 +442,15 @@ section h2 {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    .other-project-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .other-project-image {
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -394,5 +469,9 @@ section h2 {
     .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .other-project-image {
+        height: 200px;
     }
 }
