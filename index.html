@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porridge - Indie Game Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">
+        <span id="langIcon">🇨🇳</span>
+        <span id="langText" data-en="中文" data-zh="English">中文</span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-icon">🦖</div>
+                <h1 class="name">porridge</h1>
+                <p class="tagline" data-en="Indie Game Developer from China" data-zh="来自中国的独立游戏开发者">
+                    Indie Game Developer from China
+                </p>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2 data-en="About Me" data-zh="关于我">About Me</h2>
+            <p data-en="An indie game developer from China, currently working on my first game solo. I love all kinds of games, especially logic puzzles and strategy games. My goal is to create fun games with unique mechanics that surprise and delight players!" 
+               data-zh="一名来自中国的独立游戏开发者，正在尝试一个人开发自己的第一款游戏。喜欢各种类型的游戏！比如逻辑解谜，战棋等。我希望自己可以创作有趣且包含独特机制的游戏，让人眼前一亮！">
+                An indie game developer from China, currently working on my first game solo. I love all kinds of games, especially logic puzzles and strategy games. My goal is to create fun games with unique mechanics that surprise and delight players!
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2 data-en="Projects" data-zh="作品">Projects</h2>
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🦖 Dino Domino</h3>
+                    <span class="project-status" data-en="In Development" data-zh="开发中">In Development</span>
+                </div>
+                <p class="project-description" 
+                   data-en="A pixel-art puzzle game where you can rewrite the rules! Swap commands to create: healing from traps, Medusa petrification, infinite fireball loops?! Play as an adorable little dinosaur🦖 on a mind-bending adventure to save the world!"
+                   data-zh="可以修改规则的像素风解谜游戏！交换指令，制造——踩陷阱回血、美杜莎石化、无限循环火球？！扮演可爱小恐龙🦖，踏上脑洞大开的征途，拯救世界吧！">
+                    A pixel-art puzzle game where you can rewrite the rules! Swap commands to create: healing from traps, Medusa petrification, infinite fireball loops?! Play as an adorable little dinosaur🦖 on a mind-bending adventure to save the world!
+                </p>
+                <div class="project-links">
+                    <a href="https://store.steampowered.com/app/YOUR_STEAM_ID" target="_blank" class="btn btn-steam">
+                        <span>🎮</span>
+                        <span data-en="Steam Page" data-zh="Steam 商店页">Steam Page</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Placeholder for future projects -->
+            <div class="project-placeholder">
+                <p data-en="More projects coming soon..." data-zh="更多作品即将到来...">More projects coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2 data-en="Contact & Social" data-zh="联系方式">Contact & Social</h2>
+            <div class="contact-grid">
+                <a href="mailto:2529178208@qq.com" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">2529178208@qq.com</span>
+                </a>
+                <a href="https://space.bilibili.com/105096922" target="_blank" class="contact-item">
+                    <span class="contact-icon">📺</span>
+                    <span class="contact-label">Bilibili</span>
+                    <span class="contact-value">@porridge</span>
+                </a>
+                <a href="https://x.com/DinoChessGame" target="_blank" class="contact-item">
+                    <span class="contact-icon">🐦</span>
+                    <span class="contact-label">X (Twitter)</span>
+                    <span class="contact-value">@DinoChessGame</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 porridge. Made with 🦖 and ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
